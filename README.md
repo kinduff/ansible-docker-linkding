@@ -1,6 +1,6 @@
 # Docker Ansible Linkding Role
 
-This is an [Ansible](https://www.ansible.com) role which installs [n8n](https://github.com/sissbruecker/linkding) to run as a [Docker](https://www.docker.com) container wrapped in a systemd service.
+This is an [Ansible](https://www.ansible.com) role which installs [linkding](https://github.com/sissbruecker/linkding) to run as a [Docker](https://www.docker.com) container wrapped in a systemd service.
 
 This role _implicitly_ depends on:
 
