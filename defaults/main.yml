@@ -27,12 +27,6 @@ linkding_version: latest
 linkding_base_path: "{{ linkding_identifier }}"
 linkding_data_path: "{{ linkding_base_path }}/data"
 
-# Enable or disable metrics collection for linkding
-linkding_metrics_enabled: false
-
-# Enable or disable isolation mode for linkding
-linkding_isolation_enabled: true
-
 # The username and password for the Linkding superuser
 linkding_superuser_username:
 linkding_superuser_password:
