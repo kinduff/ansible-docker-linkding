@@ -140,12 +140,12 @@ linkding_floc_optout_enabled: true
 # See: `linkding_http_header_strict_transport_security`
 linkding_hsts_preload_enabled: false
 
-# PostgreSQL database configuration
-linkding_database_engine: postgresql
+# Database configuration, defaults to sqlite
+linkding_database_engine: sqlite
+linkding_database_hostname: "localhost"
 linkding_database_username: linkding
-linkding_database_password: ""
-linkding_database_hostname: ""
-linkding_database_port: 5432
+linkding_database_password:
+linkding_database_port:
 linkding_database_name: linkding
 
 # Controls the LD_CONTEXT_PATH environment variable
