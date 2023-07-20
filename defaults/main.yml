@@ -148,8 +148,10 @@ linkding_database_hostname: ""
 linkding_database_port: 5432
 linkding_database_name: linkding
 
-# Controls teh LD_CONTEXT_PATH environment variable
-linkding_environment_variable_context_path: "{{ linkding_path_prefix }}"
+# Controls the LD_CONTEXT_PATH environment variable
+# If the linkding_path_prefix is `/`, then this will be set to an empty string.
+# Otherwise, it will be set to the value of linkding_path_prefix without the first slash plus a leading slash.
+linkding_environment_variable_context_path: "{{ '/' if linkding_path_prefix == '/' else linkding_path_prefix_no_slash[1:] + '/' }}"
 
 # Controls the LD_DB_ENGINE environment variable
 linkding_environment_variable_database_engine: "{{ linkding_database_engine }}"
