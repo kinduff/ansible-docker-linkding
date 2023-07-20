@@ -34,7 +34,7 @@ traefik.http.routers.{{ linkding_identifier }}.tls={{ linkding_container_labels_
 traefik.http.routers.{{ linkding_identifier }}.tls.certResolver={{ linkding_container_labels_traefik_tls_certResolver }}
 {% endif %}
 
-traefik.http.services.{{ linkding_identifier }}.loadbalancer.server.port=5678
+traefik.http.services.{{ linkding_identifier }}.loadbalancer.server.port=9191
 {% endif %}
 
 {{ linkding_container_labels_additional_labels }}
